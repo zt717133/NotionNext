@@ -73,7 +73,7 @@ export async function getStaticProps(req) {
   return {
     props,
     revalidate: process.env.EXPORT
-      ? null
+      ?  undefined
       : siteConfig(
           'NEXT_REVALIDATE_SECOND',
           BLOG.NEXT_REVALIDATE_SECOND,
